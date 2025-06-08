@@ -18,7 +18,7 @@ A sleek, responsive, and fully functional music player built with vanilla JavaSc
 
 ## Demo
 
-Check out the live demo here: [Add your GitHub Pages or live URL here]
+Check out the live demo here: [https://quantumcoderrr.github.io/Quantify/]
 
 ---
 
