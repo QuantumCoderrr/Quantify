@@ -786,86 +786,6 @@ body::before {
   opacity: 1;
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-  .main-content {
-    margin-left: 0;
-    padding: 1rem;
-  }
-
-  .sidebar {
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-  }
-
-  .sidebar.show {
-    transform: translateX(0);
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    padding: 0 1rem;
-  }
-
-  .search-container {
-    display: none;
-  }
-
-  .player-content {
-    grid-template-columns: 1fr auto;
-    gap: 16px;
-  }
-
-  .player-right {
-    display: none;
-  }
-
-  .song-item {
-    grid-template-columns: 60px 1fr auto;
-    gap: 12px;
-  }
-
-  .song-number,
-  .song-album {
-    display: none;
-  }
-
-  .quick-access .col-md-6:nth-child(n + 3) {
-    display: none;
-  }
-}
-
-@media (max-width: 576px) {
-  .page-title {
-    font-size: 2rem;
-  }
-
-  .music-card {
-    padding: 16px;
-  }
-
-  .player-left {
-    gap: 12px;
-  }
-
-  .player-image {
-    width: 50px;
-    height: 50px;
-  }
-
-  .player-info {
-    min-width: 0;
-  }
-
-  .player-title,
-  .player-artist {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 8px;
@@ -949,4 +869,141 @@ body::before {
 
 .control-btn.active {
   color: #1db954; /* Spotify green for example */
+}
+
+
+/* Small Devices: max-width 576px (e.g. phones) */
+@media (max-width: 576px) {
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+
+  .music-card {
+    padding: 14px;
+  }
+
+  .player-left {
+    gap: 10px;
+  }
+
+  .player-image {
+    width: 48px;
+    height: 48px;
+  }
+
+  .player-title,
+  .player-artist {
+    font-size: 0.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .search-container {
+    display: none;
+  }
+
+  .player-right {
+    display: none;
+  }
+
+  .song-item {
+    grid-template-columns: 50px 1fr auto;
+    gap: 10px;
+  }
+
+  .song-number,
+  .song-album {
+    display: none;
+  }
+
+  .quick-access .col-md-6:nth-child(n + 3) {
+    display: none;
+  }
+}
+
+/* Medium Devices: max-width 768px (e.g. tablets) */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 1.5rem;
+  }
+
+  .player-content {
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+  }
+
+  .search-input {
+    font-size: 13px;
+    padding: 10px 16px 10px 40px;
+  }
+
+  .song-item {
+    font-size: 0.85rem;
+  }
+}
+
+/* Large Devices: max-width 992px (smaller desktops or horizontal tablets) */
+@media (max-width: 992px) {
+  .main-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .music-card {
+    padding: 18px;
+  }
+
+  .quick-card {
+    padding: 12px;
+  }
+
+  .quick-card img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .dropdown-item {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Large Devices: max-width 1200px (standard desktops) */
+@media (max-width: 1200px) {
+  .main-content {
+    padding: 2rem;
+  }
+
+  .sidebar {
+    width: 240px;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .player-content {
+    gap: 16px;
+  }
 }
